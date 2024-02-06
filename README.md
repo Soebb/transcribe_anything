@@ -40,7 +40,7 @@ The environment is now active and the next step will only install to the local p
 is closed then to get back into the environment `cd transcribe_anything` and execute `source activate.sh`
 
 ## Required: Install to current python environment
-  * `pip install https://github.com/Soebb/transcribe-anything/archive/main.zip`
+  * `pip install https://github.com/Soebb/transcribe_anything/archive/main.zip`
     * The command `transcribe_anything` will magically become available.
   * `transcribe_anything <YOUTUBE_URL> > out_subtitles.txt`
   * -or- `transcribe_anything <MY_LOCAL.MP4/WAV> > out_subtitles.txt`
@@ -56,17 +56,3 @@ Once the audio file has been prepared, [pydeepspeech](https://pypi.org/project/p
 utility automatically downloads the proper AI models and installs them into the proper path so that deepspeech can be
 called. It also partitions the input wav file into chunks, split at the parts of silence, in order to make processing
 go easier (DeepSpeech degrades performance significantly with longer audio clips, so they have to be kept short.)
-
-
-
-# Tech Stack
-  * Mozilla DeepSpeech: https://github.com/mozilla/DeepSpeech
-  * pydeepspeech: https://github.com/zackees/pydeepspeech
-    * mic_vad_streaming: https://github.com/hadran9/DeepSpeech-examples/tree/r0.9/mic_vad_streaming
-  * youtube-dl:
-    * github: https://github.com/ytdl-org/youtube-dl
-  * static-ffmpeg
-    * github: https://github.com/zackees/static_ffmpeg
-    * pypi: https://pypi.org/project/static-ffmpeg/
-# Testing
-  * All tests are run by `tox`, simply go to the project directory root and run it.
