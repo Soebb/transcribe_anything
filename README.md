@@ -24,20 +24,6 @@ Input a local file or url and this service will transcribe it using Mozilla Deep
     bulk_transcribe(urls, onresolve=onresolve, onfail=onfail)
     ```
 
-# Quick start
-
-## Optional: Create a virtual python package
-  * Works for Ubuntu/MacOS/Win32
-  * `mkdir transcribe_anything`
-  * `cd transcribe_anything`
-  * Download and install virtual env:
-    * `curl -X GET https://raw.githubusercontent.com/Soebb/make_venv/main/make_venv.py -o make_env.py`
-    * `python make_env.py`
-  * Enter the environment:
-    * `source activate.sh`
-
-The environment is now active and the next step will only install to the local python. If the terminal
-is closed then to get back into the environment `cd transcribe_anything` and execute `source activate.sh`
 
 ## Required: Install to current python environment
   * `pip install https://github.com/Soebb/transcribe_anything/archive/main.zip`
